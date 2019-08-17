@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  randomx-benchmark:
+    image: lchaia/randomx-benchmark
+    container_name: randomx-benchmark
+    build:
+      context: ./src
+    command: --verify --jit
